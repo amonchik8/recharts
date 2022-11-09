@@ -1,0 +1,30 @@
+/* ---MEDIA--- */
+
+/* Screens */
+$screen-iphone-5: 320px;
+$screen-iphone-6: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet-small: 600px;
+$screen-tablet: 768px;
+$screen-tablet-large: 860px;
+$screen-netbook: 960px;
+$screen-desktop: 1024px;
+$screen-desktop-medium: 1160px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;
+
+@mixin media($screen: $screen-desktop) {
+  @media screen and (min-width: $screen) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @include media($screen-desktop) {
+    &:hover {
+      @content;
+    }
+  }
+}

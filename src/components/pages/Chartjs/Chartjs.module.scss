@@ -1,0 +1,6 @@
+@import '/src/styles/core.scss';
+
+.container {
+    width: 100%;
+    @include flex(space-around, center);
+}

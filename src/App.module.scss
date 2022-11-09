@@ -1,0 +1,35 @@
+@import '/src/styles/core.scss';
+
+.container {
+  @include flex(center, center);
+}
+.link {
+  height: 500px;
+  width: 500px;
+  padding: 32px;
+  border: 2px solid $N10;
+  border-radius: 12px;
+  color: $N10;
+  transition: all 0.2s ease;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+  @include hover {
+    color: lighten($color: $N10, $amount: 20);
+    border-color: #EE964B;
+  }
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+  &:nth-child(1) {
+    background-position: top;
+    background-image: url('../public/recharts.png');
+  }
+  &:nth-child(2) {
+    background-image: url('../public/chart-js.png');
+  }
+  &:nth-child(3) {
+    background-position: top;
+    background-image: url('../public/graphql.png');
+  }
+}

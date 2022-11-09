@@ -1,0 +1,14 @@
+@import '/src/styles/styles.scss';
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+.listItem {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+.row {
+  @include flex;
+}

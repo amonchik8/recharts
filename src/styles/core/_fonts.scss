@@ -1,0 +1,13 @@
+/* ---FONTS--- */
+@use "sass:math";
+
+$BASE_FONT: 'Titillium Web', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+  helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
+/* FONT SIZE */
+$BASE_FONT_SIZE: 16px;
+
+@function rem($size) {
+  $remSize: math.div($size, 16px);
+  @return #{$remSize}rem;
+}

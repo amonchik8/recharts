@@ -1,0 +1,40 @@
+@import '/src/styles/core.scss';
+
+.main {
+  @include flex-col;
+}
+.title {
+  margin-bottom: 20px;
+  color: $N11;
+}
+.input {
+  @include text(rem(16px), 400, $N9);
+  border-radius: 8px;
+  outline: none;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.button {
+  @include text(rem(16px), 700, $N11);
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  padding: 8px;
+  margin-bottom: 50px;
+}
+.row {
+  @include flex(flex-start, center);
+  &:not(:last-child) {
+    margin-bottom: 10px
+  }
+}
+.icon {
+  @include size(24px);
+  margin-right: 10px
+}
+.name {
+  @include text(rem(32px), 700, $N9);
+}
+h2 {
+  @include text(rem(20px), 400, $N9);
+}
